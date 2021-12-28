@@ -3,11 +3,15 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+html {
+	scroll-behavior: smooth;	
+}
 
 body {
-	height: 100vh;
-	font-family: Verdana, Geneva, sans-serif;
+	min-height: 100vh;
+	font-family: 'Segoe UI', Verdana, Geneva, sans-serif;
 	background-color: #ccc;
+	color: #f5f2d0;
 }
 
 .wrapper {
@@ -29,10 +33,10 @@ body {
 	width: 100%;
 	height: 75px;
 	background-color: #32294e;
-	color: #f5f2d0;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	z-index: 100;
 }
 
 
@@ -108,12 +112,11 @@ body {
 /*===============Main=================*/
 main {
 	flex: 1;
-	background: linear-gradient(to right bottom, #32294e, #ccc);
 	box-shadow: 0 0 30px #32294e;
 }
 
 .main-inner {
-	padding: 110px 0 0 0;
+	padding: 75px 0 0 0;
 }
 
 
@@ -123,15 +126,8 @@ main {
 	display: flex;
 	justify-content: space-around;
 	position: relative;
-}
-.user-title:after {
-	content: '';
-	position: absolute;
-	bottom: -30px;
-	right: 0;
-	height: 2px;
-	width: 70%;
-	background-color: #fdec25;
+	min-height: 62vh;
+
 }
 
 .user-main-info {
@@ -140,13 +136,14 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	padding: 0 0 0 50px;
-	backdrop-filter: blur(10px);
+	background-color: #3b546c;
+}
+.user-main-info h1, .user-main-info p {
+	margin-left: 100px;
 }
 
 
 .user-main-info__user-name {
-	padding: 20px;
 	margin: 0 0 20px 0;
 	color: #f5f2d0;
 	font-size: 3rem;
@@ -184,11 +181,59 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: #f5f2d0;
 }
 .user-photo img {
-	max-width: 90%;
-	border-radius: 50%;
+	max-width: 100%;
+	/*border-radius: 50%;*/
 }
+
+
+/*===============About Me==================*/
+
+.user-additional-info {
+	padding-top: 50px;
+	background-image: linear-gradient(to left bottom, #32294e, #121b32);
+}
+.user-additional-info > div {
+	padding: 0 0 0 50px;
+	margin: 0 0 70px 0;
+}
+.user-additional-info > div:last-child {
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+.user-additional-info div :not(h2) {
+	/*margin-left: 50px;*/
+}
+.user-additional-info div h2 {
+	display: inline-block;
+	padding: 5px 10px 8px;
+	margin: 0 0 20px 0;
+	border: 2px solid #fdec25;
+	position: relative;
+}
+.user-additional-info div h2::after {
+	content: '';
+	position: absolute;
+	left: 100%;
+	top: 50%;
+	width: calc(80vw - 100%);
+	height: 2px;
+	background-color: #fdec25;
+}
+
+.about-me {}
+.contacts {}
+.skills {}
+.code-example {}
+.code-example pre {
+	background-color: #ccc;
+	color: darkviolet;
+}
+.projects {}
+.education {}
+
 
 
 
