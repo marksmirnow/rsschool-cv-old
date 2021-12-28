@@ -22,6 +22,9 @@ body {
 	height: 100%;
 	margin: 0 auto;
 }
+ul {
+	list-style: none;
+}
 
 
 /*============Header=============*/
@@ -64,12 +67,6 @@ body {
 	width: 45px;	
 	display: block;
 	cursor: pointer;
-}
-
-.header__menu {}
-
-.header__list {
-	list-style: none;
 }
 
 .header__list-item {
@@ -185,42 +182,42 @@ main {
 }
 .user-photo img {
 	max-width: 100%;
-	/*border-radius: 50%;*/
 }
 
 
 /*===============About Me==================*/
 
 .user-additional-info {
-	padding-top: 50px;
 	background-image: linear-gradient(to left bottom, #32294e, #121b32);
 }
 .user-additional-info > div {
-	padding: 0 0 0 50px;
-	margin: 0 0 70px 0;
+	padding: 30px 30px;
+	transition: background-color .3s ease;
 }
-.user-additional-info > div:last-child {
-	padding: 0 0 0 50px;
-	margin: 0;
+.user-additional-info > div:hover {
+	background-color: rgba(0, 0, 0, .3);
 }
-.user-additional-info div :not(h2) {
-	/*margin-left: 50px;*/
+.user-additional-info > div :not(h2) {
+	font-size: 1.4rem;
 }
-.user-additional-info div h2 {
+.user-additional-info > div h2 {
 	display: inline-block;
 	padding: 5px 10px 8px;
 	margin: 0 0 20px 0;
-	border: 2px solid #fdec25;
+	border: 1px solid #fdec25;
 	position: relative;
 }
-.user-additional-info div h2::after {
+.user-additional-info > div h2::after {
 	content: '';
 	position: absolute;
 	left: 100%;
 	top: 50%;
-	width: calc(80vw - 100%);
-	height: 2px;
+	width: calc(85vw - 100%);
+	height: 1px;
 	background-color: #fdec25;
+}
+.user-additional-info > div > * {
+	padding-left: 200px;
 }
 
 .about-me {}
@@ -228,8 +225,8 @@ main {
 .skills {}
 .code-example {}
 .code-example pre {
-	background-color: #ccc;
-	color: darkviolet;
+	background-color: #303030;
+	color: #ffe6f1;
 }
 .projects {}
 .education {}
@@ -239,8 +236,10 @@ main {
 
 
 
+/*===============Footer===================*/
 
 footer {
-	height: 75px;
+	width: 100%;
+	height: 100px;
 	background-color: #32294e;
 }
