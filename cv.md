@@ -1,5 +1,5 @@
 # Mark Smirnow
-![ava](ava.jpg)  
+![ava](./assets/img/ava.jpg)  
 -----
 ### Contacts:
 * **Location:** Murmansk, Russia
