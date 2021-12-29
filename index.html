@@ -4,23 +4,114 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 	<title>RSSchool CV</title>
 </head>
 
 <body>
 
-	<h1 class="name-header">Mark Smirnow</h1>
+	<div class="wrapper">
 
-	<img src="ava.jpg" alt="Mark">
+		<header>
+			<div class="header__body">
+				<div class="header__pic">
+					<img src="assets/img/header/coding.png" alt="coding-pic">
+				</div>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li class="header__list-item"><a href="#about" class="header__link">About Me</a></li>
+						<li class="header__list-item"><a href="#contacts" class="header__link">Contacts</a></li>
+						<li class="header__list-item"><a href="#skills" class="header__link">Skills</a></li>
+						<li class="header__list-item"><a href="#code" class="header__link">Code Example</a></li>
+						<li class="header__list-item"><a href="#projects" class="header__link">Projects</a></li>
+						<li class="header__list-item"><a href="#education" class="header__link">Education</a></li>
+						<li class="header__list-item"><a href="#languages" class="header__link">Languages</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 
-	<h3 class="contacts">Contacts:
-		<ul>
-			<li><span>Location: </span>Murmansk, Russia</li>
-			<li><span>E-mail: </span>mark.smirnow2@gmail.com</li>
-			<li><span>Telegram: </span>@marksmirnow</li>
-		</ul>
-	</h3>
+		<main>
+			<div class="main-inner">
+				<div class="user-title">
+					<div class="user-main-info">
+						<h1 class="user-main-info__user-name"><span>Mark</span> <br>Smirnow</h1>
+						<p class="user-main-info__user-status">Student in Rolling Scopes School...</p>
+					</div>
+					<div class="user-photo">
+						<img src="assets/img/ava.jpg" alt="Mark">
+					</div>
+				</div>
+
+				<div class="user-additional-info">
+					<div class="about-me" id="about">
+						<h2>About Me</h2>
+						<p>I am from Murmansk, 29 years old. I want to become frontend developer, so I believe RSSchool can
+							help me.</p>
+					</div>
+					<div class="contacts" id="contacts">
+						<h2>Contacts</h2>
+						<ul>
+							<li><b>Location: </b>Murmansk, Russia</li>
+							<li><b>E-mail: </b>mark.smirnow@gmail.com</li>
+							<li><b>Telegram: </b>@marksmirnow</li>
+						</ul>
+					</div>
+					<div class="skills" id="skills">
+						<h2>Skills</h2>
+						<ul>
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>Scss</li>
+							<li>JavaScript</li>
+							<li>Algoritms</li>
+						</ul>
+					</div>
+					<div class="code-example" id="code">
+						<h2>Code Example</h2>
+						<pre><code>
+function factorial(n) {
+	if (n > 12 || n &lt; 0) throw new RangeError();
+	return n === 1 || n === 0 ? 1 : n * factorial(n - 1); 
+}
+						</code></pre>
+					</div>
+					<div class="projects" id="projects">
+						<h2>Projects</h2>
+						<p>soon!</p>
+					</div>
+					<div class="education" id="education">
+						<h2>Education</h2>
+						<ul>
+							<li>2009 - 2014 - National Aerospace University «Kharkiv Aviation Institute»</li>
+						</ul>
+					</div>
+					<div class="languages" id="languages">
+						<h2>Languages</h2>
+						<ul>
+							<li>Russian: Native Speaker</li>
+							<li>Ukrainian: B2</li>
+							<li>English: A2</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<footer class="footer">
+		<div class="github footer__github">
+			<a class="github__link" href="https://github.com/marksmirnow" target="_blank">Github</a>
+		</div>
+		<div class="year footer__year">
+			<p class="year__text">2021</p>
+		</div>
+		<div class="logo footer__logo">
+			<a class="logo__link" href="https://rs.school/js/" target="_blank">
+				<img class="logo__image" src="assets/svg/rs_school_js.svg" alt="RSSchool">
+			</a>
+		</div>
+	</footer>
 
 </body>
 
