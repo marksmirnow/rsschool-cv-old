@@ -71,7 +71,7 @@
 						<h2>Code Example</h2>
 						<pre><code>
 function factorial(n) {
-	if (n > 12 || n < 0) throw new RangeError();
+	if (n > 12 || n &lt; 0) throw new RangeError();
 	return n === 1 || n === 0 ? 1 : n * factorial(n - 1); 
 }
 						</code></pre>
