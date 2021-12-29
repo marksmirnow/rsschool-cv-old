@@ -8,7 +8,8 @@ html {
 }
 
 body {
-	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 	font-family: 'Segoe UI', Verdana, Geneva, sans-serif;
 	background-color: #ccc;
 	color: #f5f2d0;
@@ -17,8 +18,6 @@ body {
 .wrapper {
 	max-width: 1200px;
 	background-color: #ccc;
-	display: flex;
-	flex-direction: column;
 	height: 100%;
 	margin: 0 auto;
 }
@@ -220,18 +219,15 @@ main {
 	padding-left: 200px;
 }
 
-.about-me {}
-.contacts {}
-.skills {}
-.code-example {}
+
 .code-example pre {
 	background-color: #303030;
 	color: #ffe6f1;
+	font-size: 10px;
 }
-.projects {}
-.education {}
-
-
+.code-example pre code {
+	font-size: 1rem;
+}
 
 
 
