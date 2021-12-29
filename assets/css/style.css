@@ -234,8 +234,40 @@ main {
 
 /*===============Footer===================*/
 
-footer {
-	width: 100%;
-	height: 100px;
+.footer {
+	min-width: 100vw;
+	height: 140px;
 	background-color: #32294e;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.github__link {
+	color: #f5f2d0;
+	text-decoration: none;
+	font-size: 1.3rem;
+	line-height: 40px;
+	position: relative;
+	padding-left: 50px;
+}
+.github__link::before {
+	content: '';
+	position: absolute;
+	top: -6px;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	background-image: url('../img/footer/github-logo.png');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.year__text {
+	font-size: 2rem;
+}
+
+.logo__image {
+	width: 100px;
 }
