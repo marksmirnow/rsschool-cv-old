@@ -20,6 +20,7 @@ body {
 	background-color: #ccc;
 	height: 100%;
 	margin: 0 auto;
+	overflow: hidden;
 }
 ul {
 	list-style: none;
@@ -176,7 +177,7 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #f5f2d0;
+	background-color: #303030;
 }
 .user-photo img {
 	max-width: 100%;
@@ -211,6 +212,7 @@ main {
 	left: 100%;
 	top: 50%;
 	width: calc(85vw - 100%);
+	max-width: 85vw;
 	height: 1px;
 	background-color: #fdec25;
 }
@@ -228,6 +230,10 @@ main {
 	display: inline-block;
 	background-color: #303030;
 	padding: 10px 20px;
+}
+
+.projects > p {
+	margin-bottom: 20px;
 }
 
 .about-me p {
