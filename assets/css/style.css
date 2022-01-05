@@ -176,7 +176,7 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #f5f2d0;
+	background-color: #303030;
 }
 .user-photo img {
 	max-width: 100%;
