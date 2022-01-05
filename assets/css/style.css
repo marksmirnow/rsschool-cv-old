@@ -230,6 +230,10 @@ main {
 	padding: 10px 20px;
 }
 
+.projects > p {
+	margin-bottom: 20px;
+}
+
 .about-me p {
 	max-width: 1000px;
 }
