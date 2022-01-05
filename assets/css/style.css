@@ -20,6 +20,7 @@ body {
 	background-color: #ccc;
 	height: 100%;
 	margin: 0 auto;
+	overflow: hidden;
 }
 ul {
 	list-style: none;
@@ -211,6 +212,7 @@ main {
 	left: 100%;
 	top: 50%;
 	width: calc(85vw - 100%);
+	max-width: 85vw;
 	height: 1px;
 	background-color: #fdec25;
 }
